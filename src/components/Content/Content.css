@@ -1,0 +1,27 @@
+article.article section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 4em;
+  padding: 2em;
+  min-height: 300px;
+}
+article.article section h3 {
+  margin-top: 2em 0;
+  padding: 0.5em;
+}
+.article div p {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+article.article section:nth-child(odd) h3 {
+  box-shadow: 0 0 0 2px #985cdc;
+}
+article.article section:nth-child(even) {
+  background: #cb87f8;
+  color: #fff;
+  box-shadow: 0 0 0 2px #985cdc;
+}

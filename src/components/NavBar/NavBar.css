@@ -1,0 +1,45 @@
+nav.menu {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+nav.menu h1 {
+  letter-spacing: 4px;
+  display: inline-block;
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+}
+
+nav.menu a {
+  text-decoration: none;
+  color: #cecece;
+}
+ul.menu-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+ul.menu-list > li:last-child {
+  position: relative;
+  pointer-events: none;
+}
+ul.menu-list > li:last-child::after {
+  content: "🌙";
+  position: absolute;
+  right: -40px;
+  cursor: pointer;
+  pointer-events: all;
+}
+ul.menu-list a {
+  font-weight: 700;
+  margin: 0 0 0 20px;
+  font-size: 1.4em;
+  padding-bottom: 0.5em;
+  transition: border 1s ease-in;
+}
+
+ul.menu-list a:hover {
+  border-bottom: 1px solid #985cdc;
+}
