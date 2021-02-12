@@ -17,7 +17,7 @@ const reducer = (theme, action) => {
 function App() {
   const menus = ["Eat", "Code", "Sleep", "Repeat", ""];
   const footerMenu = menus.filter((menu) => Boolean(menu));
-  const [theme, setTheme] = useReducer(reducer, "light");
+  const [theme, dispatchTheme] = useReducer(reducer, "light");
 
   function windowScroll() {
     return window.pageYOffset || window.scrollY;
@@ -40,7 +40,7 @@ function App() {
     return () => window.removeEventListener("scroll", handleWindowScroll);
   });
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, dispatchTheme }}>
       <div className="App">
         <header className="header">
           <NavBar menus={menus} />
