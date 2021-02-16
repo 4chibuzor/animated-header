@@ -21,3 +21,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+[0216/193541.306:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)

@@ -1,5 +1,6 @@
 # Animated - Header
 
+preview [https://4chibuzor.github.io/animated-header/ ]
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
